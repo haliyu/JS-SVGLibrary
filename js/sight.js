@@ -16,15 +16,14 @@ class SVGElement {
         return this
     };
     append(element){
-        const parent = (typeof(element) === 'string') ? document.querySelector('element') : element.node;
-        parent.appendChild(this.node)
-
+        const parent = (typeof(element) === 'string') ? document.querySelector(element) : element.node;
+        parent.appendChild(this.node);
         return this
     }
 
 }
 
-class sight{
+class Sight{
 
     constructor(selector, width, height){
          const svg = new SVGElement('svg').attr()
